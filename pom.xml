@@ -54,7 +54,7 @@
                         <outputDirectory>${basedir}/target/</outputDirectory>
                         <resources>
                             <resource>
-                                <directory>.docker</directory>
+                                <directory>docker</directory>
                                 <filtering>true</filtering>
                             </resource>
                         </resources>
