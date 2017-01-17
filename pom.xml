@@ -33,9 +33,28 @@
 <build>
 
     <finalName>spring-boot-maven-docker</finalName>
-
+    <resources>
+        <resource>
+            <directory>src/main/resources</directory>
+            <filtering>true</filtering>
+        </resource>
+    </resources>
     <plugins>
-
+        <plugin>
+            <groupId>com.spotify</groupId>
+            <artifactId>docker-maven-plugin</artifactId>
+            <configuration>
+                <imageName>wangchangye/${project.artifactId}</imageName>
+                <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+                <resources>
+                    <resource>
+                        <targetPath>/</targetPath>
+                        <directory>${project.build.directory}</directory>
+                        <!--<include>jsw/</include>-->
+                    </resource>
+                </resources>
+            </configuration>
+        </plugin>
         <plugin>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
