@@ -1,6 +1,6 @@
 FROM registry.cn-hangzhou.aliyuncs.com/com.lida/java8
 
-ADD target/spring-boot-maven-docker.jar /opt/spring-boot-maven-docker/
+ADD spring-boot-maven-docker.jar /opt/spring-boot-maven-docker/
 
 EXPOSE 8080
 
