@@ -14,7 +14,8 @@ git clone https://github.com/adaofeliz/spring-boot-maven-docker.git spring-boot-
 cd spring-boot-maven-docker
 mvn clean install
 cd target
-docker build -t spring-boot-maven-docker .
+#docker插件后 不需要手动build
+#docker build -t spring-boot-maven-docker .
 ```
 
 * Deploy to Docker Container
