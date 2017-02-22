@@ -21,7 +21,7 @@ cd target
 * Deploy to Docker Container
 ```sh
 docker images
-docker run -p 8080:8080 <image id>
+docker run -it -d  -p 8080:8080 -v /gomeo2o/logs/venus/:/gomeo2o/logs/venus/  <image id>
 ```
 
 Try it
