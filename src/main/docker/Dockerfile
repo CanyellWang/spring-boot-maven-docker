@@ -1,4 +1,4 @@
-FROM java:8
+FROM registry.cn-hangzhou.aliyuncs.com/com.lida/java8
 
 ADD spring-boot-maven-docker.jar /opt/spring-boot-maven-docker/
 
